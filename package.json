@@ -1,0 +1,16 @@
+{
+  "name": "simple-notepad-api",
+  "version": "1.0.0",
+  "description": "Minimal notepad with login/register API storing data in txt files",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
+

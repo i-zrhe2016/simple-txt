@@ -1,0 +1,27 @@
+html, body { height: 100%; margin: 0; background: #ffffff; color: #1f2328; }
+
+/* Auth overlay */
+#auth {
+  position: fixed; inset: 0; display: grid; place-items: center; background: #fff;
+}
+.auth-card {
+  width: min(92vw, 360px);
+  border: 1px solid #e5e7eb; border-radius: 10px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,.04);
+}
+.auth-card h1 { margin: 0 0 12px; font-size: 18px; }
+.auth-card label { display: grid; gap: 6px; margin: 10px 0; font-size: 14px; }
+.auth-card input { padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px; font-size: 14px; }
+.row { display: flex; gap: 10px; margin-top: 8px; }
+button { padding: 10px 14px; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; background: #fff; }
+button.secondary { background: #f6f8fa; }
+.msg { margin-top: 10px; color: #8b949e; min-height: 1.2em; font-size: 13px; }
+.token-row { display: flex; align-items: center; gap: 8px; }
+.token { display: inline-block; padding: 8px 10px; border: 1px dashed #d1d5db; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 16px; }
+
+/* Editor */
+#editor {
+  width: 100%; height: 100%; border: 0; outline: none; resize: none; padding: 16px;
+  background: #ffffff; color: #1f2328;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 16px; line-height: 1.6; white-space: pre-wrap; word-break: break-word; caret-color: #2f81f7;
+}

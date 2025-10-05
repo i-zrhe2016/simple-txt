@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+  command = ""
+
+[dev]
+  publish = "."
+  port = 8888
+

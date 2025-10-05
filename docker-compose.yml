@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  web:
+    container_name: simple-notepad
+    image: simple-notepad:latest
+    build:
+      context: .
+    ports:
+      - "${HOST_PORT:-8090}:3000"
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - JWT_SECRET=${JWT_SECRET:-dev-secret-change-me}
+    volumes:
+      - ./data:/usr/src/app/data

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>记事本</title>
+    <meta name="description" content="一个极简的空白页面，用于记录纯文本。" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div id="auth" aria-live="polite">
+      <div class="auth-card">
+        <h1>登录或注册</h1>
+        <div id="regBox">
+          <label>
+            tocken（12位）
+            <input id="username" type="text" inputmode="latin" placeholder="例如：Ab3k9X1yZ0Qw" />
+          </label>
+          <div class="row">
+            <button id="loginBtn">登录</button>
+            <button id="registerBtn" class="secondary">注册</button>
+          </div>
+          <div id="authMsg" class="msg"></div>
+        </div>
+
+        <div id="regResult" hidden>
+          <p style="margin:0 0 6px;">已为你生成 tocken，请复制保存：</p>
+          <div class="token-row">
+            <code id="regToken" class="token"></code>
+            <button id="copyTokenBtn" class="secondary">复制</button>
+          </div>
+          <div class="row" style="margin-top:10px;">
+            <button id="enterBtn">进入编辑页</button>
+            <button id="backBtn" class="secondary">返回登录</button>
+          </div>
+          <div id="regHint" class="msg">提示：稍后将自动跳转。</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+  </html>
