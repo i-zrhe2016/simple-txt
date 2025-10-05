@@ -9,6 +9,8 @@
 
 ## 自部署（Docker Compose）
 
+仅保留 Docker/Docker Compose 部署，其它托管方式（Netlify、Vercel、GitHub Pages）相关配置已移除。
+
 - 修改（可选）`.env` 中的 `HOST_PORT`，默认 8090（若端口占用可更换）。
 - 启动：`docker compose up -d --build`
 - 访问：`http://<服务器IP>:<HOST_PORT>`

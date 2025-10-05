@@ -7,6 +7,3 @@ docker-compose.yml
 Dockerfile
 .env
 README.md
-vercel.json
-netlify.toml
-.nojekyll
